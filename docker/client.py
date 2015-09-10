@@ -33,6 +33,7 @@ from .tls import TLSConfig
 
 
 class Client(
+        requests.Session,
         api.BuildApiMixin,
         api.ContainerApiMixin,
         api.DaemonApiMixin,
