@@ -13,8 +13,9 @@
 #    limitations under the License.
 
 from . import fake_stat
+from docker import constants
 
-CURRENT_VERSION = 'v1.19'
+CURRENT_VERSION = 'v{0}'.format(constants.DEFAULT_DOCKER_API_VERSION)
 
 FAKE_CONTAINER_ID = '3cc2351ab11b'
 FAKE_IMAGE_ID = 'e9aa60c60128'
